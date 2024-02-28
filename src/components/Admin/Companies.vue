@@ -30,12 +30,12 @@
           <td>{{ company.name }}</td>
           <td>{{ company.email }}</td>
           <td><a :href="'//' + company.website" v-if=company.website  target="_blank">{{company.website}}</a></td>
-          <td><v-img class="my-1"
+          <td><a :href=company.logo v-if=company.logo  target="_blank"><v-img class="my-1"
                     :width="100"
                     aspect-ratio="1/1"
                     cover
                     :src="company.logo"
-                    ></v-img>
+                    ></v-img></a>
           </td>
           <td>
             <div class="mx-4 d-flex justify-space-between">
