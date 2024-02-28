@@ -29,8 +29,14 @@
         >
           <td>{{ company.name }}</td>
           <td>{{ company.email }}</td>
-          <td><a href="company.website">Website</a></td>
-          <td>{{ company.logo }}</td>
+          <td><a :href="'//' + company.website" v-if=company.website  target="_blank">{{company.website}}</a></td>
+          <td><v-img class="my-1"
+                    :width="100"
+                    aspect-ratio="1/1"
+                    cover
+                    :src="company.logo"
+                    ></v-img>
+          </td>
           <td>
             <div class="mx-4 d-flex justify-space-between">
                 <v-btn @click="viewCompany(company.id)" color="primary" dark v-bind="props" size="small" > View </v-btn>
@@ -52,7 +58,7 @@
         }
       },
       async created() {
-        const companies = await Companies.getCompnaies('get', 'companies');
+        const companies = await Companies.getCompnaies('get', 'company');
         this.companies = companies;
     }
     }
