@@ -47,7 +47,7 @@ export default {
   name: 'App',
   data() {
     return {
-      appName: 'Practice Project',
+      appName: 'XCRM',
       authenticated: AuthService.isAuthenticated(),
       username: localStorage.getItem('username') || 'Guest'
     };

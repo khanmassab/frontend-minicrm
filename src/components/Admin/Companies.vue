@@ -14,7 +14,7 @@
           <th>
             Website
           </th>
-          <th>
+          <th class="text-center">
             Logo
           </th>
           <th class="text-center">

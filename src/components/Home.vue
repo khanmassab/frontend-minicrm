@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-      <h1>Welcome to Vue</h1>
-      <p>This is front end project for MiniCRM app.</p>
+      <h1>Welcome to XCRM</h1>
+      <p>This is frontend app for XCRM app.</p>
   </div>
 </template>
 
